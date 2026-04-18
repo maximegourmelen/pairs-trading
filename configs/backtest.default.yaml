@@ -1,0 +1,59 @@
+{
+  "data_root": "data",
+  "artifacts_root": "artifacts",
+  "initial_capital": 1000000,
+  "metadata_file": "flat-ui__data-Fri Jul 04 2025.csv",
+  "legacy_prices_file": "all data from 2000-01-01 to 2024-01-01.csv",
+  "etf_metadata_file": null,
+  "universe": {
+    "name": "core_equities_plus_etfs",
+    "universe_type": "equities_plus_etfs",
+    "min_history_days": 756,
+    "min_average_dollar_volume": 0,
+    "min_price": 5.0,
+    "allowed_sectors": [],
+    "excluded_symbols": [],
+    "included_symbols": [],
+    "etf_symbols": ["SPY", "XLF", "XLK", "XLE"]
+  },
+  "research": {
+    "start_date": "2012-01-01",
+    "end_date": "2024-01-01",
+    "train_size": 504,
+    "validation_size": 252,
+    "test_size": 252,
+    "require_same_sector": false,
+    "require_same_industry": false,
+    "min_return_correlation": 0.20,
+    "max_candidate_pairs": 200,
+    "beta_window": 126,
+    "beta_mode": "expanding",
+    "fdr_alpha": 0.05,
+    "ranking_weights": {
+      "validation_sharpe": 0.25,
+      "test_sharpe": 0.35,
+      "half_life": 0.15,
+      "stability": 0.10,
+      "drawdown": 0.10,
+      "turnover": 0.05
+    }
+  },
+  "strategy": {
+    "beta_model": "kalman_beta",
+    "zscore_lookback": 60,
+    "entry_z": 2.25,
+    "exit_z": 0.5,
+    "stop_z": 4.0,
+    "max_holding_days": 35,
+    "pair_allocation_pct": 0.08,
+    "max_gross_exposure_pct": 0.70,
+    "max_net_exposure_pct": 0.08,
+    "max_active_pairs": 6,
+    "commission_bps": 1.0,
+    "slippage_bps": 3.0,
+    "borrow_bps_annual": 40.0,
+    "max_pair_gross_pct": 0.18,
+    "kalman_delta": 0.0001,
+    "kalman_observation_variance": 0.001
+  }
+}

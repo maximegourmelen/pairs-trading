@@ -1,0 +1,57 @@
+{
+  "data_root": "data",
+  "artifacts_root": "artifacts",
+  "initial_capital": 1000000,
+  "metadata_file": "flat-ui__data-Fri Jul 04 2025.csv",
+  "legacy_prices_file": "all data from 2000-01-01 to 2024-01-01.csv",
+  "etf_metadata_file": null,
+  "universe": {
+    "name": "core_equities",
+    "universe_type": "equities",
+    "min_history_days": 756,
+    "min_average_dollar_volume": 0,
+    "min_price": 5.0,
+    "allowed_sectors": [],
+    "excluded_symbols": [],
+    "included_symbols": [],
+    "etf_symbols": []
+  },
+  "research": {
+    "start_date": "2012-01-01",
+    "end_date": "2024-01-01",
+    "train_size": 504,
+    "validation_size": 252,
+    "test_size": 252,
+    "require_same_sector": true,
+    "require_same_industry": false,
+    "min_return_correlation": 0.25,
+    "max_candidate_pairs": 150,
+    "beta_window": 126,
+    "beta_mode": "rolling",
+    "fdr_alpha": 0.05,
+    "ranking_weights": {
+      "validation_sharpe": 0.30,
+      "test_sharpe": 0.35,
+      "half_life": 0.15,
+      "stability": 0.10,
+      "drawdown": 0.05,
+      "turnover": 0.05
+    }
+  },
+  "strategy": {
+    "beta_model": "rolling_ols",
+    "zscore_lookback": 60,
+    "entry_z": 2.0,
+    "exit_z": 0.5,
+    "stop_z": 3.5,
+    "max_holding_days": 30,
+    "pair_allocation_pct": 0.10,
+    "max_gross_exposure_pct": 0.75,
+    "max_net_exposure_pct": 0.10,
+    "max_active_pairs": 5,
+    "commission_bps": 1.0,
+    "slippage_bps": 2.0,
+    "borrow_bps_annual": 30.0,
+    "max_pair_gross_pct": 0.20
+  }
+}

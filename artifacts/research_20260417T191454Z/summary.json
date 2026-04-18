@@ -1,0 +1,13 @@
+{
+  "candidates_considered": 200,
+  "pairs_evaluated": 200,
+  "pairs_after_fdr": 2,
+  "fdr_alpha": 0.05,
+  "beta_mode": "expanding",
+  "train_start": "2019-12-30",
+  "train_end": "2021-12-28",
+  "validation_start": "2021-12-29",
+  "validation_end": "2022-12-28",
+  "test_start": "2022-12-29",
+  "test_end": "2023-12-29"
+}

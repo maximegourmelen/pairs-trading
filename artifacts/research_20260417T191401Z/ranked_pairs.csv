@@ -1,0 +1,2 @@
+pair_id,symbol_a,symbol_b,sector,return_correlation,train_pvalue,half_life,validation_sharpe,test_sharpe,stability,drawdown,turnover,validation_total_return,test_total_return,model,fdr_pvalue,ranking_score
+ES__SO,ES,SO,Utilities,0.8113482282147818,0.00028643734235425634,inf,-0.4832248870305464,-0.678445050721324,0.9849939844831658,0.1646064102806546,0.06349206349206349,-0.02623120200816298,-0.07564997317668132,rolling_ols,0.04296560135313845,0.5

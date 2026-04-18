@@ -1,0 +1,13 @@
+{
+  "initial_capital": 1000000.0,
+  "final_equity": 1007249.1434764618,
+  "total_return": 0.007249143476461661,
+  "annualized_return": 0.0006032947892244955,
+  "annualized_volatility": 0.0050691797649436545,
+  "sharpe_ratio": 0.11901230913068661,
+  "max_drawdown": -0.014359019764495828,
+  "average_gross_exposure": 13614.770397027976,
+  "average_net_exposure": -347.4656428524217,
+  "trade_count": 169,
+  "pairs_traded": 2
+}
